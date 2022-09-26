@@ -1,8 +1,9 @@
-const app = express();
 const cron = require("node-cron");
 const express = require("express");
-const PORT = process.env.PORT || 8080;
 const { Curl } = require("node-libcurl");
+
+const app = express();
+const PORT = process.env.PORT || 8080;
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
